@@ -1,0 +1,10 @@
+consulting_snowflake_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: CONSULTING_DATA_MARTS
+      schema: PUBLIC
+      threads: 8
