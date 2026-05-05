@@ -3,8 +3,13 @@ consulting_snowflake_dbt:
   outputs:
     dev:
       type: snowflake
+      account: "verfqjt-nh19157"
+      user: "phelanj"
+      password: "Lexjacnovember19"
       role: ACCOUNTADMIN
       warehouse: COMPUTE_WH
       database: CONSULTING_DATA_MARTS
       schema: PUBLIC
       threads: 8
+
+  

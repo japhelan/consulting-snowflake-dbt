@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: consulting_source_data
+    database: CONSULTING_DB_INITIAL
+    schema: CONSULTING
+    tables:
+      - name: PROJECT
+      - name: BUSINESSUNIT
+      - name: CLIENT
+      - name: DELIVERABLE
+      - name: CONSULTANT
+
+

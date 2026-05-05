@@ -16,4 +16,17 @@ snapshot-paths:
   - snapshots
 models:
   consulting-snowflake-dbt:
-    +materialized: view
+    staging:
+      +materialized: view
+      +schema: staging
+    pm_mart: 
+      dimensions:
+        +materialized: table
+        +schema: datamart
+
+      fact:
+        +materialized: table
+        +schema: datamart
+snapshots:
+  consulting_snowflake_dbt:
+    +target_schema: snapshots
